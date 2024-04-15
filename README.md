@@ -1,2 +1,2 @@
 # abap
-Personel ABAP code snippets.
+Personal ABAP notes.

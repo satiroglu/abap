@@ -1,2 +1,2 @@
-# abap
+# ABAP
 Personal ABAP notes.

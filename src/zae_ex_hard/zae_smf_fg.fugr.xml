@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>SAS Belge Kontrolü</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZAE_SMF_FGTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZAE_SMF_FG</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZAE_SMF_FM</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>SAS Belge Kontrol</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>I_EBELN</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>EBELN</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>E_EBELN</PARAMETER>
+       <TYP>EBELN</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>E_MBLNR</PARAMETER>
+       <TYP>MBLNR</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>E_MJAHR</PARAMETER>
+       <TYP>MJAHR</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>E_BELNR</PARAMETER>
+       <TYP>BELNR_D</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>E_GJAHR</PARAMETER>
+       <TYP>GJAHR</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>DURUM</PARAMETER>
+       <TYP>CHAR200</TYP>
+      </RSEXP>
+     </EXPORT>
+     <TABLES>
+      <RSTBL>
+       <PARAMETER>ET_OUT</PARAMETER>
+       <DBSTRUCT>ZAE_SMF_S</DBSTRUCT>
+       <OPTIONAL>X</OPTIONAL>
+      </RSTBL>
+     </TABLES>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>I_EBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Satınalma belge numarası</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_EBELN</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Satınalma belge numarası</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_MBLNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Malzeme belgesi sayısı</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_MJAHR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Malzeme belgesi yılı</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_BELNR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Muhasebe belgesinin belge numarası</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>E_GJAHR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Mali yıl</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>DURUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Durum</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_OUT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Genel malzeme verileri</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
